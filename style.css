@@ -1,0 +1,74 @@
+.clickbox {
+  background-color: rgb(176, 196, 222);
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1vw;
+  transition: background-color 0.3s ease, margin 0.3s ease;
+}
+
+/* Сброс базовых отступов и настройка фона страницы с изображением */
+body {
+  margin: 0;
+  padding: 0;
+  /* Фон с изображением, чтобы эффект размытия был заметен */
+  background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Контейнер для кнопок */
+.container {
+  text-align: center;
+}
+
+/* Стекломорфная кнопка */
+.glass-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Свойство размытия заднего фона */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  color: #000000;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover-эффект для стекломорфной кнопки */
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Неоморфная кнопка */
+.neumo-btn {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+  cursor: pointer;
+  margin: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover-эффект для неоморфной кнопки */
+.neumo-btn:hover {
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
+
+/* Эффект нажатой (вдавленной) кнопки */
+.neumo-btn:active {
+  box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
+}
